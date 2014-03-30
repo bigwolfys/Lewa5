@@ -61,7 +61,7 @@
     <string name="package_permmison_logs">Разрешено %1$d раз, запрещено %2$d раз</string>
     <string name="permission_asking_dialog_title">"%1$s запрашивает
 %2$s"</string>
-    <string name="permission_asking_dialog_hint">Внимание! Если причина запроса Вам не понятна, его лучше отклонить</string>
+    <string name="permission_asking_dialog_hint">Примечание: Это запрос влияет на конфиденциальность и безопасность информации, рекомендуется не включать. В Центре Безопасности можно включить или отключить данную функцию.</string>
     <string name="combo_auto_launch_title">Менеджер автозагрузки</string>
     <string name="combo_auto_launch_boot">PowerBoot</string>
     <string name="combo_auto_launch_background">фоновая автозагрузка</string>
