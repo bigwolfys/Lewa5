@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<!--Decompiled by BART-R (BurgerZ <az.burgerz@gmail.com)>--><resources>
     <string-array name="dayofweek">
         <item></item>
         <item>Воскресенье</item>
@@ -8,7 +8,7 @@
         <item>Среда</item>
         <item>Четверг</item>
         <item>Пятница</item>
-        <item>Суббота</item> 
+        <item>Суббота</item>
     </string-array>
     <string-array name="dayofweek_offical">
         <item></item>

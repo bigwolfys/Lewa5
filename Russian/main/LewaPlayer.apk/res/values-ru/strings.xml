@@ -369,7 +369,7 @@
     <string name="title_blank">   </string>
     <string name="music_exit">Выход</string>
     <string name="download_menu">Получить изображения</string>
-    <string name="downloading">Загрузка     </string>
+    <string name="downloading">Загрузка</string>
     <string name="download_tip">"Wi-Fi не подключен. Продолжение может привести к затратам на мобильную передачу данных.
 
 Продолжить?"</string>
@@ -442,8 +442,7 @@
     <string name="open_download">Нажмите, чтобы открыть список загрузок</string>
     <string name="download_done">Загрузка завершена</string>
     <string name="add_to_download">“%s” добавить в список загрузки</string>
-    <string name="downloading">Загрузка</string>
     <string name="enter_name">Пожалуйста введите название песни или имя певца</string>
-    <string name="clear_histroy">Очистить историю</string>
-    <string name="no_result">Музыка не найдена</string>
+	<string name="clear_histroy">Очистка истории</string>
+	<string name="no_result">Музыка не найдена</string>
 </resources>
