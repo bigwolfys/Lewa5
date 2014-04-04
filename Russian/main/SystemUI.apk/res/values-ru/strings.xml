@@ -271,4 +271,7 @@
     <string name="shake_clean_summary">Быстрая очистка уведомлений встряхиванием</string>
     <string name="notifilter_header">СКРЫТЫЕ УВЕДОМЛЕНИЯ</string>
     <string name="notifilter_tail">ОТОБРАЖАЕМЫЕ УВЕДОМЛЕНИЯ</string>
+    <string name="config_statusBarComponent">com.android.systemui.statusbar.phone.LewaPhoneStatusBar</string>
+    <string name="lewa_status_bar_date_formatter">"%2$s
+%1$s %3$s"</string>
 </resources>
