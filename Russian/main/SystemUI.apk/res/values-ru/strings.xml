@@ -273,4 +273,6 @@
     <string name="config_statusBarComponent">com.android.systemui.statusbar.phone.LewaPhoneStatusBar</string>
     <string name="lewa_status_bar_date_formatter">"%2$s
 %1$s %3$s"</string>
+	<string name="twenty_four_hour_time_format">H:mm</string>
+    <string name="twelve_hour_time_format">h:mm a</string>
 </resources>
