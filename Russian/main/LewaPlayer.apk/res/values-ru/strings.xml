@@ -23,7 +23,8 @@
     <string name="photoPickerNotFoundText">Нет фото, доступных на устройстве</string>
     <string name="remove_song_text">Удаление песни из плейлиста</string>
     <string name="remove_song_file_text">Удаление песни</string>
-    <string name="remove_song_prompt_text">Удалить “%1$s”？</string>
+    <string name="remove_song_prompt_text">Вы действительно хотите удалить выбранные песни？</string>
+	<string name="song_num_add_to_playlist">%1$d песню(ен) добавить в плейлист</string>
     <string name="item_modify_text">Редактировать</string>
     <string name="item_remove_text">Удалить</string>
     <string name="remove_dialog_message_text">Удалить плейлист?</string>

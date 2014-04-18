@@ -83,4 +83,5 @@
     <string name="menu_download_newest_full">Загрузить последнюю версию</string>
     <string name="error_can_not_get_update_version">Невозможно получить обновление</string>
     <string name="error_cannot_download_full_package">Ошибка загрузки полного пакета обновления</string>
+	<string name="share_with_friends">.Поделитесь теперь с друзьями！</string>
 </resources>

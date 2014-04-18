@@ -118,7 +118,7 @@
     <string name="system_tool_folder">Утилиты</string>
     <string name="system_secrity_folder">Система</string>
     <string name="new_rom_hint">Новый</string>
-    <string name="onekey_lockscreen">Локскрин</string>
+    <string name="onekey_lockscreen">Быстрый Локскрин</string>
     <string name="other_widgets">Другие виджеты</string>
     <string name="admin_description">Разрешить виджету запускать экран блокировки</string>
     <string name="add_widget">Добавить виджет</string>
