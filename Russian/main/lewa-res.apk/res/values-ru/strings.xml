@@ -55,14 +55,14 @@
     <string name="no_network">Нет подключения к сети</string>
     <string name="suggest_to">Рекомендуется перейти в:</string>
     <string name="check_network">Проверьте сеть</string>
-    
-    
-    
-    
-    
-    
-    <string name="safe_media_volume_warning">"Поднять громкость выше безопасного уровня? 
- Прослушивание музыки на максимальном уровне может нанести вред слуху"</string>
+
+
+
+
+
+
+    <string name="safe_media_volume_warning">"Поднять громкость выше безопасного уровня?
+Прослушивание музыки на максимальном уровне может нанести вред слуху"</string>
     <string name="the_spring_festival">Китайский Новый год</string>
     <string name="lantern_festival">Фестиваль фонарей</string>
     <string name="the_dragon_boat_festival">Праздник лодок-драконов</string>

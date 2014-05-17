@@ -1,32 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Лаунчер Lewa</string>
-    <string name="mb">Мб</string>
-    <string name="gb">Гб</string>
-    <string name="nosim">Нет данных о трафике</string>
-    <string name="nosim_set">Лимит не задан</string>
-    <string name="used">Использовано</string>
-    <string name="surplus">Осталось</string>
-    <string name="noalarm">Будильник</string>
-    <string name="off">Выкл</string>
-    <string name="on">Вкл</string>
-    <string name="alarm">Будил.</string>
-    <string name="power_on">Сбер.</string>
-    <string name="power_surplus">Осталось</string>
-    <string name="power_full">Зарядка</string>
-    <string name="power_isfull">Заряжено</string>
-    <string name="power_h">ч</string>
-    <string name="power_m">м</string>
-    <string name="torch">Фонарик</string>
-    <string name="safe_scanning">Проверка...</string>
-    <string name="safe_scanning_error">Ошибка сканирования, попробуйте позже</string>
-    <string name="safe_status_one">Безопасно</string>
-    <string name="safe_status_two">дня(ей) без проверки</string>
-    <string name="safe_status_three">Проверить</string>
-    <string name="clean_toast_str0">Оптимизировано</string>
-    <string name="clean_toast_str1">"Освобождено %1$d Мб памяти
-Доступно %2$d Мб"</string>
-    <string name="config_workspaceDefaultTransitionEffect">Standard</string>
+
     <string name="application_name">Лаунчер Lewa</string>
     <string name="folder_name">Без имени</string>
     <string name="chooser_wallpaper">Выбрать обои от</string>
@@ -53,10 +27,6 @@
     <string name="permlab_uninstall_shortcut">Удалять ярлыки</string>
     <string name="permdesc_uninstall_shortcut">Позволяет приложению удалять ярлыки без вмешательства пользователя</string>
     <string name="permlab_read_settings">Рабочий стол и ярлыки</string>
-    <string Name="pref_icon_size">Размер иконок</string>
-    <string Name="pref_icon_size_summary">Выберите размер иконок</string>
-    <string Name="small_icon_size">Маленький</string>
-    <string Name="normal_icon_size">Нормальный</string>
     <string name="permdesc_read_settings">Позволяет приложению просматривать настройки и ярлыки рабочего стола</string>
     <string name="permlab_write_settings">Изменение рабочего стола и ярлыков</string>
     <string name="permdesc_write_settings">Позволяет приложению изменять настройки и ярлыки рабочего стола</string>
@@ -82,6 +52,10 @@
     <string name="pref_desktop_effect">Эффект анимации рабочего стола</string>
     <string name="pref_screen_layout">Сетка экрана</string>
     <string name="pref_screen_layout_summary">Выберите экранное расположение значков</string>
+    <string name="pref_icon_size">Размер иконок</string>
+    <string name="pref_icon_size_summary">Выберите размер иконок</string>
+    <string name="small_icon_size">Маленький</string>
+    <string name="normal_icon_size">Нормальный</string>
     <string name="pref_desktop_effect_summary">Эфекты при перемещении рабочих столов</string>
     <string name="pref_title_wallpaper_scrolling">Прокрутка обоев</string>
     <string name="pref_summary_wallpaper_scrolling">Обои перемещаются вместе с рабочим столом</string>
@@ -104,7 +78,7 @@
     <string name="pref_label_settings">Настройки рабочего стола</string>
     <string name="pref_keep_resident">Держать в памяти</string>
     <string name="pref_summary_keep_resident">Не выгружать лаунчер из памяти</string>
-    <string name="pref_screen_cycle">Прокрутка рабочих столов</string>
+    <string name="pref_screen_cycle">Циклическая прокрутка рабочих столов</string>
     <string name="folder_full_hint">Эта папка заполнена</string>
     <string name="shortcut_phone">Телефон</string>
     <string name="shortcut_contacts">Контакты</string>
@@ -123,7 +97,7 @@
     <string name="system_tool_folder">Утилиты</string>
     <string name="system_secrity_folder">Система</string>
     <string name="new_rom_hint">Новый</string>
-    <string name="onekey_lockscreen">Быстрый Локскрин</string>
+    <string name="onekey_lockscreen">Локскрин</string>
     <string name="other_widgets">Другие виджеты</string>
     <string name="admin_description">Разрешить виджету запускать экран блокировки</string>
     <string name="add_widget">Добавить виджет</string>
