@@ -53,6 +53,10 @@
     <string name="permlab_uninstall_shortcut">Удалять ярлыки</string>
     <string name="permdesc_uninstall_shortcut">Позволяет приложению удалять ярлыки без вмешательства пользователя</string>
     <string name="permlab_read_settings">Рабочий стол и ярлыки</string>
+    <string Name="pref_icon_size"> Размер иконок </ строка>
+    <string Name="pref_icon_size_summary"> Выберите размер иконок </ строка>
+    <string Name="small_icon_size"> Маленький </ строка>
+    <string Name="normal_icon_size"> Нормальный </ строка>
     <string name="permdesc_read_settings">Позволяет приложению просматривать настройки и ярлыки рабочего стола</string>
     <string name="permlab_write_settings">Изменение рабочего стола и ярлыков</string>
     <string name="permdesc_write_settings">Позволяет приложению изменять настройки и ярлыки рабочего стола</string>
