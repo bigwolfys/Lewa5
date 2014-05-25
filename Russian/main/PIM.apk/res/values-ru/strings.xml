@@ -1505,6 +1505,7 @@
     <string name="mms_timer_text_formart" formatted="false">%sYear%sMonth%sDay</string>
     <string name="menu_mms_timer_send">таймер отправки :</string>
     <string name="notify_type_message">Сообщение уведомления</string>
+    <string name="toast_donot_start_activity">Не активировать</string>
     <string name="ip_call_settings">Настройки IP-вызова</string>
     <string name="ip_prefix_hint">Например 17951,12593,17911</string>
     <string name="ip_prefix_description">IP-префикс</string>
@@ -1592,5 +1593,4 @@
     <string name="group_member">Члены группы</string>
     <string name="send_contact_info">Отправить информацию о контакте</string>
     <string name="no_visible_groups">У Вас нет видимых групп</string>
-    <string name="toast_donot_start_activity">Не активировать</string>
 </resources>

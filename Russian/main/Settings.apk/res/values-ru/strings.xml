@@ -148,17 +148,17 @@
     <string name="meeting_settings_title">Совещание</string>
     <string name="outdoor_settings_title">Улица</string>
     <string name="apn_predefine_change_dialog_notice">Вы уверены, что хотите сохранить? Изменение настроек по умолчанию может вызвать проблемы с подключением!</string>
-    <string name="dialog_apn_disabled">APN отключено!</string>
-    <string name="dialog_apn_disabled_msg">Выключите режим полета, чтобы включить параметры APN.</string>
     <string name="sound_category_feedback_title">Система</string>
     <string name="sound_category_calls_title">Входящие вызовы</string>
     <string name="voice_call_title">Мелодия звонка голосового вызова</string>
     <string name="voice_call_summary">Установка мелодии звонка для входящих голосовых вызовов по умолчанию</string>
     <string name="video_call_title">Мелодия звонка видеовызова</string>
     <string name="video_call_summary">Установка мелодии звонка для входящих видеовызовов по умолчанию</string>
+    <string name="sip_call_title">Мелодия SIP-вызова</string>
+    <string name="sip_call_summary">Установка мелодии для SIP-вызова</string>
     <string name="Phone_vibrate_summary">Вибрация при входящих вызовах</string>
     <string name="vibrate_title">Вибрация</string>
-    <string name="audio_profile_settings_title">Настройки звука</string>
+    <string name="audio_profile_settings_title">Профили</string>
     <string name="sim_status_title">Информация о SIM-картах</string>
     <string name="sim_status_summary">Информация о SIM-картах и сети</string>
     <string name="status_imei_slot1">IMEI (слот 1)</string>
@@ -193,8 +193,9 @@
     <string name="hdmi_audio_toggler">Аудио</string>
     <string name="hdmi_video_toggler">Видео</string>
     <string name="hdmi_video_resolution">Видеоразрешение</string>
-    <string name="hdmi_notification_title">HDMI-кабель подключен</string>
-    <string name="hdmi_notification_content">Щелкните для настройки HDMI</string>
+    <string name="hdmi_auto">AUTO</string>
+    <string name="hdmi_replace_hdmi">HDMI</string>
+    <string name="hdmi_replace_mhl">MHL</string>
     <string name="display_settings_scences_title">Сцены</string>
     <string name="mtk_thememanager_title">Тема</string>
     <string name="default_name">По умолчанию</string>
@@ -212,7 +213,6 @@
     <string name="drm_settings_summary">Удаление всех DRM-лицензий</string>
     <string name="drm_reset_dialog_msg">Это действие приведет к удалению всех лицензий на этом устройстве. Продолжить?</string>
     <string name="drm_reset_toast_msg">Лицензии успешно удалены.</string>
-    <string name="gemini_sim_management_title">Управление SIM-картами</string>
     <string name="gemini_sim_info_title">Информация о SIM-карте</string>
     <string name="gemini_default_sim_title">SIM-карта по умолчанию</string>
     <string name="gemini_general_settings_title">Общие настройки</string>
@@ -226,7 +226,6 @@
     <string name="gemini_voice_call">Голосовые вызовы</string>
     <string name="gemini_video_call">Видеовызовы</string>
     <string name="gemini_data_connection">Соединение для передачи данных</string>
-    <string name="gemini_data_connection_and_video_call">Соединение для передачи данных</string>
     <string name="gemini_msg">SMS/MMS</string>
     <string name="gemini_default_sim_always_ask">Всегда спрашивать</string>
     <string name="gemini_intenet_call">Интернет-вызовы</string>
@@ -348,6 +347,7 @@
     <string name="dlg_mount_external_sd_title">Подключить SD-карту?</string>
     <string name="dlg_mount_external_sd_summary">При подключении SD-карты некоторые используемые вами приложения могут прекратить свое выполнение</string>
     <string name="tethered_ipv6_title">Настройка точки доступа и сопряжения</string>
+    <string name="tethered_ipv6_title_nohotspot">Настройки раздачи</string>
     <string name="tethered_ipv4v6">(Протокол IPv6 доступен)</string>
     <string name="tethered_ipv6">(Доступен только протокол IPv6)</string>
     <string name="tethered_ipv4">(Протокол IPv6 недоступен)</string>
@@ -395,6 +395,7 @@
     <string name="wifi_advanced_ipv6_address_title">Адрес IPv6</string>
     <string name="wifi_ipv4_address">Адрес IPv4</string>
     <string name="wifi_ipv6_address">Адрес IPv6</string>
+    <string name="international_roaming_summary_title">Параметры роуминга</string>
     <string name="mtk_datausage_show_on_lockscreen">Показывать при блокировке экрана</string>
     <string name="mtk_datausage_update">Обновить использование данных</string>
     <string name="mtk_datausage_update_set">Обновить</string>
@@ -438,6 +439,16 @@
     <string name="nfc_tag_mode_category">Режим тегов</string>
     <string name="nfc_rw_tag_title">Чтение и запись тегов</string>
     <string name="nfc_rw_tag_summary">Чтение из тэга или запись в тэг</string>
+    <string name="nfc_card_emulation_category_title">Режим эмуляции карты</string>
+    <string name="nfc_card_emulation">Эмуляция карты</string>
+    <string name="card_emulation_settings_category_title">Доступные элементы безопасности</string>
+    <string name="card_emulation_settings_no_element_found">Нет доступных элементов безопасности</string>
+    <string name="card_emulation_settings_off_text">Для просмтотра доступных элементов безопасности включите эмуляцию карты</string>
+    <string name="card_emulation_turning_off_text">Выключение эмуляции карты...</string>
+    <string name="card_emulation_turning_on_text">Включение эмуляции карты...</string>
+    <string name="card_emulation_switch_error_title">Ошибка</string>
+    <string name="card_emulation_switch_error_message">Ошибка переключения на %1$s</string>
+    <string name="card_emulation_sim_not_supported_message">%1$s не поддерживает функции эмуляции NFC-карты</string>
     <string name="voice_unlock_backup_info_summary">Что следует делать, если функция включения голоса не распознает Ваш голос?</string>
     <string name="unlock_set_unlock_mode_voice_weak">Голосовая разблокировка</string>
     <string name="voice_ui_title">Голосовое управление</string>
@@ -460,28 +471,72 @@
     <string name="lockscreen_style_default_desc">Быстрый доступ к приложениям на заблокированном экране</string>
     <string name="evdo_signal_strength_info">Evdo</string>
     <string name="security_not_set">Безопасность не установлена</string>
+    <string name="status_imei_slot3">IMEI (слот 3)</string>
+    <string name="status_imei_sv_slot3">IMEI SV (слот 3)</string>
+    <string name="status_min_number_slot3">MIN (слот 3)</string>
+    <string name="status_prl_version_slot3">PRL Version (слот 3)</string>
+    <string name="status_meid_number_slot3">MEID (слот 3)</string>
     <string name="lockdown_vpn_already_connected">Режим постоянный VPN уже включен для соединения.</string>
     <string name="wifi_ap_no_connected">0 подключенных пользователей</string>
     <string name="wifi_ap_no_blocked">0 заблокированных пользователей</string>
-    <string name="data_default_sim_title">Данные по умолчанию</string>
-    <string name="voice_sms_default_sim_title">Вызов/SMS по умолчанию</string>
-    <string name="fast_mode">Быстрый режим</string>
-    <string name="fast_mode_title">Быстрый вызов/SMS</string>
-    <string name="fast_mode_summary">Интеллектуальный быстрый набор и отправка SMS</string>
-    <string name="sim_displayname_too_long">Максимум 8 знаков</string>
-    <string name="privacy_policy">Политика конфиденциальности</string>
-    <string name="header_lewa_account_info">Информация аккаунта</string>
-    <string name="header_lewa_account_info_nickname">Имя:</string>
-    <string name="header_lewa_account_info_usergroup">Группа пользователей:</string>
-    <string name="pond_nickname">Имя:</string>
-    <string name="pond_usergroup">Группа пользователей:</string>
-    <string name="pond_loading">Загрузка...</string>
-    <string name="pond_none">Пусто</string>
+    <string name="mouse_primary_button_title">Поменять местами правую и левую клавиши</string>
+    <string name="mouse_primary_button_dialog_title">Переключение клавиш</string>
+    <string name="double_click_title">Скорость двойного нажития</string>
+    <string name="test_area">ЗОНА ТЕСТА:</string>
+    <string name="double_click_tip">Двойное нажатие здесь</string>
+    <string name="apn_port_warning">Значение порта должно быть от 1 до 65535!</string>
+    <string name="usb_tethering_select_version">Выберите версию ОС компьютера</string>
+    <string name="oobe_sim_info_title">Управление SIM</string>
+    <string name="oobe_default_sim_title">Задать SIM по умолчанию</string>
+    <string name="clear_motion_summary">Улучшение плавности видео</string>
+    <string name="clear_motion_title">ClearMotionTM</string>
+    <string name="wifi_hotspot_suspend_optimizations">Оптимизация Wi-Fi-модема</string>
+    <string name="wifi_hotspot_suspend_optimizations_summary">Минимизация использования батареи при включенной точке доступа Wi-Fi</string>
+    <string name="wfd_change_resolution_menu_title">Изменить разрешение</string>
+    <string name="passpoint_title">Passpoint</string>
+    <string name="passpoint_summary">Auto connect to passpoint-enabled APs</string>
+    <string name="passpoint_append_summary">(via Passpoint)</string>
+    <string name="passpoint_append_summary_not_connected">(Passpoint)</string>
+    <string name="passpoint_config_hotspot">Hotspot 2.0</string>
+    <string name="passpoint_config_credential_type">Credential type</string>
+    <string name="passpoint_config_eap_method">Метод EAP</string>
+    <string name="passpoint_supported">Поддерживается</string>
+    <string name="passpoint_username_pw">Username/Password</string>
+    <string name="passpoint_certificate">Сертификат</string>
+    <string name="wifi_hotspot_select_band_title">Select operational band</string>
+    <string name="audio_profile_bes_loudness_title">BesLoudness</string>
+    <string name="audio_profile_bes_loudness_summary">Volume booster for speaker</string>
+    <string name="adupsfota_software_update_string_ext">Беспроводное обновление</string>
+    <string name="gemini_sim_management_title">Управление SIM-картами</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <string name="yes">Да</string>
     <string name="no">Нет</string>
     <string name="create">Создать</string>
+    <string name="allow">Разрешить</string>
+    <string name="deny">Отказать</string>
     <string name="device_info_default">Неизвестно</string>
-    <string name="show_dev_countdown">Вы почти у цели. Осталось несколько шагов: %1$d.</string>
     <string name="show_dev_on">Вы стали разработчиком!</string>
     <string name="show_dev_already">Не нужно, Вы уже разработчик.</string>
     <string name="header_category_wireless_networks">БЕСПРОВОДНЫЕ СЕТИ</string>
@@ -522,6 +577,7 @@
     <string name="radioInfo_cid">CID</string>
     <string name="sdcard_unmount">Извлечь SD-карту</string>
     <string name="sdcard_format">Очистить SD-карту</string>
+    <string name="sdcard_formatting">Форматирование внутренней памяти...</string>
     <string name="small_font">Маленький</string>
     <string name="medium_font">Средний</string>
     <string name="large_font">Большой</string>
@@ -564,14 +620,11 @@
     <string name="battery_info_health_unspecified_failure">Неизвестная ошибка</string>
     <string name="battery_info_health_cold">Холодная</string>
     <string name="bluetooth">Bluetooth</string>
-    <string name="bluetooth_visibility">Обнаружение разрешено</string>
     <string name="bluetooth_is_discoverable">Время видимости для Bluetooth-устройств: %1$s</string>
     <string name="bluetooth_is_discoverable_always">Отображать для ближайших Bluetooth-устройств</string>
     <string name="bluetooth_not_visible_to_other_devices">Не отображать для других Bluetooth-устройств</string>
     <string name="bluetooth_only_visible_to_paired_devices">Отображать только для подключенных устройств</string>
-    <string name="bluetooth_not_discoverable">Разрешить обнаружение устройства</string>
     <string name="bluetooth_visibility_timeout">Время ожидания видимости</string>
-    <string name="bluetooth_visibility_timeout_summary">Установка продолжительности периода разрешения обнаружения</string>
     <string name="bluetooth_lock_voice_dialing">Блокировать голосовой набор</string>
     <string name="bluetooth_lock_voice_dialing_summary">Предотвратить использование набора через Bluetooth, когда экран заблокирован</string>
     <string name="bluetooth_devices">Bluetooth-устройства</string>
@@ -619,8 +672,6 @@
     <string name="bluetooth_pb_acceptance_dialog_text">Устройство %1$s пытается получить доступ к Вашим контактам и журналу вызовов. Предоставить доступ для %2$s?</string>
     <string name="bluetooth_pb_remember_choice">Больше не спрашивать</string>
     <string name="date_and_time">Настройки даты и времени</string>
-    <string name="date_time_12_hour_sample">1:00 PM</string>
-    <string name="date_time_24_hour_sample">13:00</string>
     <string name="choose_timezone">Выбор часового пояса</string>
     <string name="default_date_format">MM/dd/yyyy</string>
     <string name="normal_date_format">По умолчанию ( %s)</string>
@@ -723,9 +774,9 @@
     <string name="roaming_reenable_message">Передача данных прекращена, потому что устройство находится за пределами домашней сети, а Интернет-роуминг выключен</string>
     <string name="roaming_turn_it_on_button">Включить</string>
     <string name="roaming_warning">Разрешить Интернет-роуминг? Возможны высокие расходы за его использование</string>
-    <string name="roaming_warning_multiuser">Использование передачи данных в роуминге может привести к большим расходам на его потребление. 
+    <string name="roaming_warning_multiuser">Использование передачи данных в роуминге может привести к большим расходам на его 
 
-Настройки вступят в силу после перезагрузки</string>
+потребление. Настройки вступят в силу после перезагрузки</string>
     <string name="roaming_reenable_title">Разрешить интернет-роуминг?</string>
     <string name="networks">Выбор оператора</string>
     <string name="sum_carrier_select">Выберите оператора связи</string>
@@ -758,7 +809,6 @@
     <string name="owner_info_settings_edit_text_hint">Введите текст для отображения на экране блокировки</string>
     <string name="show_user_info_on_lockscreen_label">Показывать сведения о пользователе на экране блокировки</string>
     <string name="user_info_settings_title">Сведения о пользователе</string>
-    <string name="location_settings_title">Местоположение</string>
     <string name="security_settings_title">Безопасность</string>
     <string name="security_settings_summary">Настройка функции \"Местоположение\", разблокировка экрана и блокировка хранилища регистрационных данных</string>
     <string name="cdma_security_settings_summary">Настройка функции \"Местоположение\", разблокировка экрана и блокировка хранилища регистрационных данных</string>
@@ -1172,7 +1222,6 @@
     <string name="search_settings_summary">Настроить параметры и управлять историей поиска</string>
     <string name="display_settings">Экран</string>
     <string name="accelerometer_title">Автоповорот экрана</string>
-    <string name="nightmode_title">Ночной режим</string>
     <string name="accelerometer_summary_on">Автоматически менять ориентацию экрана при повороте устройства</string>
     <string name="accelerometer_summary_off">Автоматически менять ориентацию экрана при повороте устройства</string>
     <string name="brightness">Яркость</string>
@@ -1244,6 +1293,7 @@
     <string name="status_meid_number">MEID</string>
     <string name="status_icc_id">ICCID</string>
     <string name="status_network_type">Тип мобильной сети</string>
+    <string name="status_latest_area_info">Информация оператора</string>
     <string name="status_data_state">Мобильная передача данных</string>
     <string name="status_service_state">Статус сети</string>
     <string name="status_signal_strength">Уровень сигнала</string>
@@ -1377,6 +1427,7 @@
     <string name="tether_settings_title_bluetooth">Bluetooth-модем</string>
     <string name="tether_settings_title_usb_bluetooth">Общий Интернет</string>
     <string name="tether_settings_title_all">Режим модема</string>
+    <string name="tether_settings_title_all_nohotspot">Раздача</string>
     <string name="usb_title">USB</string>
     <string name="usb_tethering_button_text">USB-модем</string>
     <string name="usb_tethering_available_subtext">USB: подключено; проверить общий доступ в интернет</string>
@@ -1405,6 +1456,9 @@
     <string name="assisted_gps_disabled">Использовать сервер для функции A-GPS (снять флажок для улучшения быстродействия GPS)</string>
     <string name="use_location_title">Местоположение и поиск Google</string>
     <string name="use_location_summary">Разрешить Google использовать данные о местоположении для улучшения поиска и работы других служб</string>
+    <string name="location_access_title">Доступ к местоположению</string>
+    <string name="location_access_summary">Разрешить приложениям использовать данные о Вашем местоположении</string>
+    <string name="location_sources_heading">Определение местоположения</string>
     <string name="about_settings">Об устройстве</string>
     <string name="about_settings_summary">Просмотр юридической информации, состояния устройства и версии ПО</string>
     <string name="legal_information">Правовая информация</string>
@@ -1462,12 +1516,6 @@
     <string name="lockpattern_too_many_failed_confirmation_attempts_header">Слишком много неудачных попыток!</string>
     <string name="lockpattern_too_many_failed_confirmation_attempts_footer">Повторите попытку через %d с.</string>
     <string name="activity_not_found">Приложение не установлено</string>
-    <string name="skip_button_label">Отклонить</string>
-    <string name="next_button_label">Далее</string>
-    <string name="lock_title">Обеспечение безопасности устройства</string>
-    <string name="lock_intro_message">"Чтобы никто, кроме Вас, не мог воспользоваться устройством, создайте графический ключ разблокировки экрана. Для этого соедините в произвольном порядке не менее четырех точек на следующем экране. 
-
-Чтобы начать, нажмите \"Далее\""</string>
     <string name="manageapplications_settings_title">Управление приложениями</string>
     <string name="manageapplications_settings_summary">Управление установленными приложениями и их удаление</string>
     <string name="applications_settings">Приложения</string>
@@ -1631,7 +1679,6 @@
     <string name="hardkeyboard_category">Настройки внешней клавиатуры</string>
     <string name="auto_punctuate_summary">Нажмите дважды клавишу \"Пробел\" для ввода точки</string>
     <string name="show_password">Показывать пароль</string>
-    <string name="show_password_summary" />
     <string name="ime_security_warning">При использовании этого способа могут собираться все вводимые данные, в том числе пароли и номера кредитных карт. Способ ввода запрашиваетя приложением \"%1$s\". Использовать этот способ ввода?</string>
     <string name="spellchecker_security_warning">Для проверки орфографии будет использоваться приложение %1$s, которое может собирать все вводимые данные, в том числе пароли и номера кредитных карт. Продолжить?</string>
     <string name="spellchecker_quick_settings">Настройки</string>
@@ -1743,8 +1790,8 @@
     <string name="accessibility_screen_magnification_summary">"Эта функция позволяет увеличивать и уменьшать изображение, трижды нажав на экран.
 
 При увеличенном масштабе можно:
-"<ul><li>"панорамировать – проведите пальцами по экрану;
-"<li>изменять масштаб – сведите или разведите пальцы.</li></li></ul>"
+"<li><ul>"панорамировать – проведите пальцами по экрану;
+"<li>изменять масштаб – сведите или разведите пальцы.</li></ul></li>"
 
 Чтобы временно увеличить изображение под пальцем, трижды нажмите на экран и удерживайте его. Проведя пальцем, вы можете посмотреть на другие области экрана. Чтобы вернуть экран в прежнее состояние, уберите палец.
 
@@ -2241,9 +2288,6 @@
     <string name="backup_pw_set_button_text">Задать пароль резервной копии</string>
     <string name="backup_pw_cancel_button_text">Отклонить</string>
     <string name="percentage">%d%%</string>
-    <string name="memory_preferred">По умолчанию</string>
-    <string name="default_memory_title">Память по умолчанию</string>
-    <string name="phone_memory_title">Память устройства</string>
     <string name="additional_system_update_settings_list_item_title">Дополнит. обновл. сис-мы</string>
     <string name="selinux_status_disabled">Отключено</string>
     <string name="selinux_status_permissive">Только предупреждение</string>
@@ -2304,19 +2348,191 @@
     <string name="user_picture_title">Документ с фото</string>
     <string name="cell_broadcast_settings">Широковещательная передача сообщений</string>
     <string name="cell_broadcast_settings_summary">Выберите типы экстренных оповещений на экране.</string>
+    <string name="erase_internal_sd_storage">Очистить внутреннюю память</string>
+    <string name="buttonlight_title">Подсветка клавиш</string>
+    <string name="buttonlight_msg">Подсветка клавиш при касании экрана</string>
+    <string name="frequent_default_key">dualsimcard|mobile_network_settings|audio_profile|ringtone|wallpaper|wifi_display_settings|wifi_settings|application_settings|bluetooth_settings|location_gps|security_settings|language|screen_timeout|font_size|power_on_off|tether_settings|status_bar_settings</string>
     <string name="common_settings_title">ОБЩИЕ</string>
     <string name="settings_title">ВСЕ НАСТРОЙКИ</string>
     <string name="custom_frequent_foot_btn_text">Изменить....</string>
-    <string name="frequent_settings_notice_title">Скрыть настройки ниже</string>
-    <string name="status_bar_title">Панель уведомлений</string>
-    <string name="custom_frequently_title">Изменить пункты настроек</string>
     <string name="ringvolume_vibrate_title">Мелодии и вибрация</string>
     <string name="audio_sound_title">Звук</string>
     <string name="ringvolume_settings_title">Мелодии</string>
-    <string name="battery_style">Индикатор уровня заряда</string>
     <string name="voice_call_ringtone_title">Мелодия вызова</string>
     <string name="sms_call_ringtone_title">SMS-сообщение</string>
+    <string name="status_bar_title">Панель уведомлений</string>
+    <string name="haptic_feedback_enable_summary">Вибрация при нажатии экранных клавиш</string>
+    <string name="key_label">Клавиши</string>
+    <string name="keyboard_lights_title">Подсветка клавиш</string>
+    <string name="keyboard_lights_summary">Включить подсветку клавиш</string>
+    <string name="keyboard_auto_lights_title">Автоподсветка</string>
+    <string name="keyboard_auto_lights_summary">Автоматическая подсветка клавиш при включенной автояркости</string>
+    <string name="volume_key_title">Клавиша ГРОМКОСТЬ</string>
+    <string name="volume_wake_title">Включение экрана</string>
+    <string name="volume_wake_summary">Нажатие клавиши ГРОМКОСТЬ при выключенном экране включает его</string>
+    <string name="volume_music_controls_title">Управление плеером</string>
+    <string name="volume_music_controls_summary">Длительное нажатие клавиши ГРОМКОСТЬ при выключенном экране переключает треки. Громкость вызова регулироваться не будет</string>
+    <string name="back_key_title">Клавиша НАЗАД</string>
+    <string name="back_to_kill_title">Завершение задач</string>
+    <string name="back_to_kill_summary">Удерживание клавиши НАЗАД завершает текущую задачу</string>
+    <string name="wifi_p2p_dialog_title">Отключите</string>
+    <string name="wifi_p2p_dialog_message">Вы хотите отключить?</string>
+    <string name="display_category_animation_options_title">Анимация</string>
+    <string name="display_electron_beam_animation_on_title">Анимация при включении экрана</string>
+    <string name="display_electron_beam_animation_off_title">Анимация при выключении экрана</string>
+    <string name="gemini_dualsim_switch_settings_title">Настройка набора/отправки</string>
+    <string name="gemini_dualsim_switch_title">Сдвинуть набор/отправка SMS</string>
+    <string name="gemini_dualsim_switch_summary">Смещение ползунка влево позволит совершить вызов/отправить SMS</string>
+    <string name="silent_mode_title">Тихий режим</string>
+    <string name="device_lewa_version">"Версия LEWAv5： "</string>
+    <string name="device_cpu">"Процессор： "</string>
+    <string name="device_memory">"Память "</string>
+    <string name="device_system_memory">"Оперативная память： "</string>
+    <string name="device_system_rom">"Прошивка： "</string>
+    <string name="internal_memory_available">"Внутреннее хранилище： "</string>
+    <string name="sdcard_available">"SD-карта： "</string>
+    <string name="rom_size_title">"Память телефона:： "</string>
+    <string name="setting_info_empty_text">Нет</string>
+    <string name="system_tutorial_list_item_title">Учебник по системе</string>
+    <string name="lewa_firmware_version">"Версия Android： "</string>
+    <string name="lewa_model_number">"Модель： "</string>
+    <string name="unlock_set_unlock_none_title_lewa">Локскрин Lewa</string>
+    <string name="debug_log">Для опытных пользователей</string>
+    <string name="upload_debug_log_title">Опытный пользователь</string>
+    <string name="upload_debug_log_summary">Помочь нам улучшить продукт с помощью отсылки информации об использовании</string>
+    <string name="root_title">Менеджер безопасности</string>
+    <string name="root_access">Доступ с правами root</string>
+
+    <string name="root_access_warning_title">Разрешить доступ с правами Суперпользователя?</string>
+    <string name="root_access_warning_message">Позволяя приложениям запрашивать доступ с правами Суперпользователя, Вы рискуете нарушить безопасность системы!</string>
+    <string name="frequent_settings_notice_title">Скрыть настройки ниже</string>
+    <string name="custom_frequently_title">Изменить пункты настроек</string>
+    <string name="double_card_setting_title">Добро пожаловать</string>
+    <string name="double_card_setting_msg">Всего три шага настройки</string>
+    <string name="start_setting">Вперед</string>
+    <string name="skip_setting">Пропустить</string>
+    <string name="previous_setp">Предыдущий</string>
+    <string name="next_setp">Следующий</string>
+    <string name="use_for_send_msg">Отправлять SMS/MMS</string>
+    <string name="no_change_favorite">C какой SIM отправлять сообщения?</string>
+    <string name="use_for_call">Совершать звонки</string>
+    <string name="no_change_style">С какой SIM совершать звонки?</string>
+    <string name="use_for_internet">Для интернета</string>
+    <string name="use_phone_efficient">С какой SIM выходить в интернет?</string>
+    <string name="guide_complete">Выполнено!</string>
+    <string name="dial_slide_hint_msg">Протяните для смены карты</string>
+    <string name="msg_slide_hint_msg">Протяните для смены карты</string>
+    <string name="try_title">Попробовать</string>
+    <string name="try_msg">Нажмите и перетащите влево</string>
+    <string name="success_msg">Поздравляю! Вы изучили Классическую модель.</string>
+    <string name="remeber_head">Запомните</string>
+    <string name="remeber_tail">перетащить влево</string>
+    <string name="default_gprs_title">Выберите SIM-карту по умолчанию для GPRS</string>
+    <string name="could_modify_in_simmanagement">Можно изменить в управлении СИМ-картами</string>
+    <string name="sim_china_mobile">CMCC</string>
+    <string name="sim_china_telecom">CTCC</string>
+    <string name="sim_china_unicom">CUCC</string>
+    <string name="guide_sim_china_mobile">"China Mobile
+
+ GSM
+"</string>
+    <string name="guide_sim_china_telecom">"China Telecom
+
+ CDMA
+"</string>
+    <string name="guide_sim_china_unicom">"China Unicom
+
+ WCDMA
+"</string>
     <string name="sim_pin_locked">PIN заблокирован</string>
+    <string name="phone_inUse">Телефон используется, Вы не можете переключиться в режим полета</string>
+    <string name="sim_displayname_too_long">Максимум 8 знаков</string>
+    <string name="fast_mode">Быстрый режим</string>
+    <string name="fast_mode_title">Быстрый вызов/SMS</string>
+    <string name="fast_mode_summary">Интеллектуальный быстрый набор и отправка SMS</string>
+    <string name="ring_title">Вызов (звонок, сообщение, уведомление)</string>
+    <string name="voice_call_alarm_description">Вызов (голосовой вызов)</string>
+    <string name="media_volume_description">Мультимедиа (музыка, видео, игры и т.д.)</string>
+    <string name="system_volume_description">Система (фото, скриншоты, нажатие клавиши)</string>
+    <string name="sim_china_mobile_short">CMCC</string>
+    <string name="sim_china_telecom_short">CTCC</string>
+    <string name="sim_china_unicom_short">CUCC</string>
+    <string name="nightmodecolor_title">Цвета ночного режима</string>
+    <string name="summary_nightmode_value">%1$s</string>
+    <string name="inadvertmode_title">Контроль случайных нажатий</string>
+    <string name="inadvertmode_msg">Исключить случайные нажатия, когда устройство находится в кармане</string>
+    <string name="sim_settings_guide_editname_title">Мастер настройки SIM</string>
+    <string name="sim_settings_guide_voicesms_title">Голосовые вызовы и SMS/MMS</string>
+    <string name="sim_settings_guide_data_title">Передача данных</string>
+    <string name="sim_settings_guide_datasave_title">Ограничение трафика</string>
+    <string name="sim_settings_guide_video_title">Видеовызов</string>
+    <string name="sim_settings_guide_fastmode_title">Быстрый режим</string>
+    <string name="sim_settings_data_usage_title">Тарифный план</string>
+    <string name="sim_settings_data_usage_hint_text">Пожалуйста, введите объем трафика по тарифному плану</string>
+    <string name="sim_settings_data_usage_mb_size">Mб в месяц</string>
+    <string name="sim_settings_data_usage_dont_care"><u>Ввести позже</u></string>
+    <string name="sim_settings_data_switch">Передача данных</string>
+    <string name="sim_settings_guide_editname_summary">Изменение названий SIM-карт</string>
+    <string name="sim_settings_guide_voicesms_summary">Выбор SIM-карты, с которой чаще совершаются вызовы и отправляются SMS/MMS</string>
+    <string name="sim_settings_guide_data_summary">Выбор SIM-карты для передачи данных</string>
+    <string name="sim_settings_guide_datasave_summary">Рекомендуется ограничить объем трафика. Так как в случае его превышения оператором могут взыматься дополнительные платежи</string>
+    <string name="sim_settings_guide_video_summary">Выбор поддержки 3G для SIM-карты, с которой будут совершаться видеовызовы</string>
+    <string name="sim_settings_guide_fastmode_summary">Интеллектуальный быстрый набор и отправка SMS/MMS</string>
+    <string name="nightmode_title">Ночной режим</string>
+    <string name="battery_style">Индикатор уровня заряда</string>
+    <string name="screen_timeout_never">Никогда</string>
+    <string name="smart_sensory_title">Умные датчики</string>
+    <string name="smart_gesture_title">Жесты</string>
+    <string name="smart_gallery_title">Галерея</string>
+    <string name="smart_gallery_summary">Перемещение между изображениями</string>
+    <string name="smart_music_title">Музыка</string>
+    <string name="smart_music_summary">Перемещение между песнями</string>
+    <string name="smart_camera_title">Камера</string>
+    <string name="smart_camera_summary">Захват фото</string>
+    <string name="smart_launcher_title">Лаунчер</string>
+    <string name="smart_launcher_summary">Перемещение между рабочими столами</string>
+    <string name="smart_unlock_title">Разблокировка</string>
+    <string name="smart_unlock_summary">"В заблокированном состоянии, устройство
+при приближении датчика
+устройство
+самостоятельно
+разблокируется"</string>
+    <string name="smart_somatosensory_tile">Умные датчики</string>
+    <string name="smart_sms_title">Набор в SMS/MMS</string>
+    <string name="smart_sms_summary">"В режиме SMS/MMS поднесите устройство к уху
+и устройство начнет набор номера абонента"</string>
+    <string name="smart_call_title">Ответ в машине</string>
+    <string name="smart_call_summary">"ВО время вызова
+поднесите палец к сенсору
+для ответа"</string>
+    <string name="hifi_switch_title">Hi-Fi</string>
+    <string name="hifi_switch_summary">Высокое качество звучания</string>
+    <string name="about_hifi_title">"Что такое Hi-Fi?"</string>
+    <string name="about_hifi_msg">Hi-Fi это аббревиатура High-Fidelity. Она определяется как способность звуковой системы или оборудования воспроизводить звук реалистично и качественно</string>
+    <string name="hifi_mode_title">"Что такое  режим Hi-Fi?"</string>
+    <string name="hifi_mode_msg">Режим Hi-Fi является режимом воспроизведения на основе специального аудиочипсета, который может способствовать улучшению качества музыки</string>
+    <string name="hifi_more_title">Узнать больше</string>
+    <string name="hifi_more_msg">Что касается качества звука, как правило, музыки с высоким качеством, например APE, FLAC, WAV или MP3 с битрейтом 320kps лучше прослушивать в режиме Hi-Fi. Также Вы должны знать, что для Hi-Fi необходим встроенный аудиочипсет и это вызывает увеличенных расход батареи</string>
+    <string name="hifi_on_title">Как включить Hi-Fi?</string>
+    <string name="hifi_on_msg">Когда вставлены наушники, зайдите в Настройки/Звук и включите там опцию Hi-Fi</string>
+    <string name="hifi_quicksetting_msg">Перед тем как насладиться Hi-Fi-звуком вставьте наушники!</string>
+    <string name="uep_detail">Программа опытных пользователей нацелена на улучшение опыта пользования мобильной системой и предназначена для разработчиков, чятобы они смогли выпускать принципипиально новые продукты и улучшить качество уще выпущенных сервисов</string>
+    <string name="participate_uep">Участие в программе</string>
+    <string name="uep_title">Опытный пользователь</string>
+    <string name="privacy_policy">Политика конфиденциальности</string>
+    <string name="agreement_title">Сервисное соглашение</string>
+    <string name="notify_dialog_message">Требуется перезагрузка, чтобы изменения вступили в силу. Перезагрузить сейчас?</string>
+    <string name="fake_system_cpu_hz">please overlay it!!!!</string>
+    <string name="fake_system_mem">please overlay it!!!!</string>
+    <string name="fake_system_rom">please overlay it!!!!</string>
+    <string name="fake_system_mem_total">please overlay it!!!!</string>
+    <string name="fake_system_mem_avail">please overlay it!!!!</string>
+    <string name="clam_switch">Clam switch</string>
+    <string name="voice_call_ringtone_settings">Настройки голосового вызова</string>
+    <string name="location_settings_title">Местоположение</string>
+    <string name="size_used">Использованный</string>
+    <string name="size_available">Доступный</string>
+    <string name="clean_calculate_size_title">В настоящее время доступного пространства</string>
     <string name="autostarts_title">Автозагрузка</string>
     <string name="autostarts_allowed">Разрешить</string>
     <string name="autostarts_prohibited">Запретить</string>
@@ -2327,14 +2543,10 @@
     <string name="autostarts_optimize_btn_title">Оптимизация элементов автозагрузки</string>
     <string name="autostarts_startup_boot_des">Во время загрузки</string>
     <string name="autostarts_startup_background_des">После загрузки</string>
-    <string name="sdcard_storage_title">SD-карта</string>
     <string name="usb_storage_title">USB-хранилище</string>
-    <string name="internal_storage_title">Внутренняя память</string>
     <string name="sdcardclean_title">Очистить SD-карту</string>
     <string name="usbclean_title">Очистить USB-хранилище</string>
     <string name="internalclean_title">Очистить внутреннюю память</string>
-    <string name="memory_others">Другие</string>
-    <string name="calculate_size">Подсчет очищаемого места ...</string>
     <string name="clean_size">Очистка места...</string>
     <string name="calculate_size_result">Выбрано %s очищаемых приложений</string>
     <string name="clean_all_storage">Очистить все</string>
@@ -2345,9 +2557,6 @@
     <string name="clean_app_cache_summary">Кэш:</string>
     <string name="clean_clear_complete_title">Очистка завершена</string>
     <string name="clean_clear_complete_summary2">Пространство</string>
-    <string name="clean_calculate_size_title">В настоящее время доступного пространства</string>
-    <string name="size_used">Использованный</string>
-    <string name="size_available">Доступный</string>
     <string name="calculate_size_complete">"Найдено очищаемое пространство "</string>
     <string name="calculate_size_stop">Подсчет остановлен</string>
     <string name="calculate_size_stop_result">Обнаружено %s свободного места</string>
@@ -2377,10 +2586,8 @@
     <string name="clean_calculate_complete_result">%1$s свободного пространства после очистки ожидается %2$s</string>
     <string name="storage_install_app_sdcard_summary">" (некоторые приложения не поддерживаются)"</string>
     <string name="gsm_umts_network_preferences_default_values">0</string>
-    <string name="notify_dialog_message">Требуется перезагрузка, чтобы изменения вступили в силу. Перезагрузить сейчас?</string>
     <string name="sim_setting_guide_continue">Вперед</string>
     <string name="sim_setting_guide_cancel">Отмена</string>
-    <string name="ring_title">Вызов (звонок, сообщение, уведомление)</string>
     <string name="labi_sync_title">Синхронизация контактов</string>
     <string name="labi_sync_summary">Синхронизация контактов в Labi</string>
     <string name="labi_recovery_title">Востановить контакты</string>
@@ -2391,151 +2598,37 @@
     <string name="ACCOUNT_LABEL">Аккаунт Lewa</string>
     <string name="lewa_account">Lewa аккаунт</string>
     <string name="dialog_already_registered">Вы уже вошли. Если вы хотите использовать другой ID, пожалуйста, выйдите сначала из активного аккаунта</string>
-    <string name="haptic_feedback_enable_summary">Вибрация при нажатии экранных клавиш</string>
-    <string name="key_label">Клавиши</string>
-    <string name="keyboard_lights_title">Подсветка клавиш</string>
-    <string name="keyboard_lights_summary">Включить подсветку клавиш</string>
-    <string name="keyboard_auto_lights_title">Автоподсветка</string>
-    <string name="keyboard_auto_lights_summary">Автоматическая подсветка клавиш при включенной автояркости</string>
-    <string name="volume_key_title">Клавиша ГРОМКОСТЬ</string>
-    <string name="volume_wake_title">Включение экрана</string>
-    <string name="volume_wake_summary">Нажатие клавиши ГРОМКОСТЬ при выключенном экране включает его</string>
-    <string name="volume_music_controls_title">Управление плеером</string>
-    <string name="volume_music_controls_summary">Длительное нажатие клавиши ГРОМКОСТЬ при выключенном экране переключает треки. Громкость вызова регулироваться не будет</string>
-    <string name="back_key_title">Клавиша НАЗАД</string>
-    <string name="back_to_kill_title">Завершение задач</string>
-    <string name="back_to_kill_summary">Удерживание клавиши НАЗАД завершает текущую задачу</string>
-    <string name="phone_inUse">Телефон используется, Вы не можете переключиться в режим полета</string>
-    <string name="voice_call_alarm_description">Вызов (голосовой вызов)</string>
-    <string name="wifi_p2p_dialog_title">Отключите</string>
-    <string name="wifi_p2p_dialog_message">Вы хотите отключить?</string>
-    <string name="setting_info_empty_text">Нет</string>
-    <string name="display_category_animation_options_title">Анимация</string>
-    <string name="display_electron_beam_animation_on_title">Анимация при включении экрана</string>
-    <string name="display_electron_beam_animation_off_title">Анимация при выключении экрана</string>
-    <string name="gemini_dualsim_switch_settings_title">Настройка набора/отправки</string>
-    <string name="gemini_dualsim_switch_title">Сдвинуть набор/отправка SMS</string>
-    <string name="gemini_dualsim_switch_summary">Смещение ползунка влево позволит совершить вызов/отправить SMS</string>
-    <string name="debug_log">Для опытных пользователей</string>
-    <string name="upload_debug_log_title">Опытный пользователь</string>
-    <string name="upload_debug_log_summary">Помочь нам улучшить продукт с помощью отсылки информации об использовании</string>
-    <string name="proximity_title">Калибровка датчика приближения</string>
-    <string name="proximity_dialog_title">Калибровка</string>
-    <string name="proximity_summary">Обратите внимание на то, что датчик не может быть заблокирован в пределах более 2 см. Также следует избегать прямых солнечных лучей!</string>
-    <string name="proximity_msg_sucess">Калибровка прошла успешно</string>
-    <string name="proximity_msg_failed">Ошибка калибровки</string>
-    <string name="proximity_calib_ok">Да</string>
-    <string name="proximity_calib_failed">Нет</string>
     <string name="sync_settings">Аккаунты и синхронизация</string>
-    <string name="silent_mode_title">Тихий режим</string>
-    <string name="device_lewa_version">"Версия LEWAv5： "</string>
-    <string name="device_cpu">"Процессор： "</string>
-    <string name="device_memory">"Память "</string>
-    <string name="device_system_memory">"Оперативная память： "</string>
-    <string name="internal_memory_available">"Внутреннее хранилище： "</string>
-    <string name="sdcard_available">"SD-карта： "</string>
-    <string name="system_tutorial_list_item_title">Учебник по системе</string>
     <string name="system_tutorial_list_item_summary">Узнайте, как пользоваться устройством</string>
-    <string name="root_title">Менеджер безопасности</string>
-    <string name="root_access">Доступ с правами root</string>
-    <string name="root_access_warning_title">Разрешить доступ с правами Суперпользователя?</string>
-    <string name="root_access_warning_message">Позволяя приложениям запрашивать доступ с правами Суперпользователя, Вы рискуете нарушить безопасность системы!</string>
     <string name="root_access_none">Отключено</string>
     <string name="root_access_apps">Исключительно приложения</string>
     <string name="root_access_adb">Только ADB</string>
     <string name="root_access_all">приложения и ADB</string>
-    <string name="media_volume_description">Мультимедиа (музыка, видео, игры и т.д.)</string>
-    <string name="system_volume_description">Система (фото, скриншоты, нажатие клавиши)</string>
-    <string name="sim_china_mobile_short">CMCC</string>
-    <string name="sim_china_telecom_short">CTCC</string>
-    <string name="sim_china_unicom_short">CUCC</string>
-    <string name="sim_china_mobile">CMCC</string>
-    <string name="sim_china_telecom">CTCC</string>
-    <string name="sim_china_unicom">CUCC</string>
-    <string name="guide_sim_china_mobile">"China Mobile
-
- GSM
-"</string>
-    <string name="guide_sim_china_telecom">"China Telecom
-
- CDMA
-"</string>
-    <string name="guide_sim_china_unicom">"China Unicom
-
- WCDMA
-"</string>
-    <string name="unlock_set_unlock_none_title_lewa">Локскрин Lewa</string>
-    <string name="double_card_setting_title">Добро пожаловать</string>
-    <string name="double_card_setting_msg">Всего три шага настройки</string>
-    <string name="start_setting">Вперед</string>
-    <string name="skip_setting">Пропустить</string>
-    <string name="previous_setp">Предыдущий</string>
-    <string name="next_setp">Следующий</string>
-    <string name="use_for_send_msg">Отправлять SMS/MMS</string>
-    <string name="no_change_favorite">C какой SIM отправлять сообщения?</string>
-    <string name="use_for_call">Совершать звонки</string>
-    <string name="no_change_style">С какой SIM совершать звонки?</string>
-    <string name="use_for_internet">Для интернета</string>
-    <string name="use_phone_efficient">С какой SIM выходить в интернет?</string>
-    <string name="guide_complete">Выполнено!</string>
-    <string name="dial_slide_hint_msg">Протяните для смены карты</string>
-    <string name="msg_slide_hint_msg">Протяните для смены карты</string>
-    <string name="try_title">Попробовать</string>
-    <string name="try_msg">Нажмите и перетащите влево</string>
-    <string name="success_msg">Поздравляю! Вы изучили Классическую модель.</string>
-    <string name="remeber_head">Запомните</string>
-    <string name="remeber_tail">перетащить влево</string>
-    <string name="default_gprs_title">Выберите SIM-карту по умолчанию для GPRS</string>
-    <string name="could_modify_in_simmanagement">Можно изменить в управлении СИМ-картами</string>
-    <string name="location_access_title">Доступ к местоположению</string>
-    <string name="location_access_summary">Разрешить приложениям использовать данные о Вашем местоположении</string>
-    <string name="location_sources_heading">Определение местоположения</string>
-    <string name="rom_size_title">"Память телефона:： "</string>
+    <string name="header_lewa_account_info">Информация аккаунта</string>
+    <string name="header_lewa_account_info_nickname">Имя:</string>
+    <string name="header_lewa_account_info_usergroup">Группа пользователей:</string>
+    <string name="pond_nickname">Имя:</string>
+    <string name="pond_usergroup">Группа пользователей:</string>
+    <string name="pond_loading">Загрузка...</string>
+    <string name="pond_none">Пусто</string>
     <string name="rom_size_default">"%1$s （Доступно）
 %2$s （Всего）"</string>
     <string name="g_sensor_calibration_title">Калибровка G-сенсора</string>
     <string name="proximity_sensor_calibration_title">Калибровка датчика приближения</string>
     <string name="proximity_sensor_calibration_message">Пожалуйста, убедитесь, что датчики работают.</string>
-    <string name="agreement_title">Сервисное соглашение</string>
-    <string name="nightmodecolor_title">Цвета ночного режима</string>
-    <string name="summary_nightmode_value">%1$s</string>
-    <string name="inadvertmode_title">Контроль случайных нажатий</string>
-    <string name="inadvertmode_msg">Исключить случайные нажатия, когда устройство находится в кармане</string>
-    <string name="sim_settings_guide_editname_title">Мастер настройки SIM</string>
-    <string name="sim_settings_guide_voicesms_title">Голосовые вызовы и SMS/MMS</string>
-    <string name="sim_settings_guide_data_title">Передача данных</string>
-    <string name="sim_settings_guide_datasave_title">Ограничение трафика</string>
-    <string name="sim_settings_guide_video_title">Видеовызов</string>
-    <string name="sim_settings_guide_fastmode_title">Быстрый режим</string>
-    <string name="sim_settings_data_usage_title">Тарифный план</string>
-    <string name="sim_settings_data_usage_hint_text">Пожалуйста, введите объем трафика по тарифному плану</string>
-    <string name="sim_settings_data_usage_mb_size">Mб в месяц</string>
-    <string name="sim_settings_data_usage_dont_care"><u>Ввести позже</u></string>
-    <string name="sim_settings_data_switch">Передача данных</string>
-    <string name="sim_settings_guide_editname_summary">Изменение названий SIM-карт</string>
-    <string name="sim_settings_guide_voicesms_summary">Выбор SIM-карты, с которой чаще совершаются вызовы и отправляются SMS/MMS</string>
-    <string name="sim_settings_guide_data_summary">Выбор SIM-карты для передачи данных</string>
-    <string name="sim_settings_guide_datasave_summary">Рекомендуется ограничить объем трафика. Так как в случае его превышения оператором могут взыматься дополнительные платежи</string>
-    <string name="sim_settings_guide_video_summary">Выбор поддержки 3G для SIM-карты, с которой будут совершаться видеовызовы</string>
-    <string name="sim_settings_guide_fastmode_summary">Интеллектуальный быстрый набор и отправка SMS/MMS</string>
     <string name="halo_title">Гало</string>
     <string name="halo_summary_on">Открыть Гало</string>
     <string name="halo_summary_off">Закрыть Гало</string>
     <string name="thumb_search_title">Поиск жестами</string>
     <string name="thumb_search_msg">С помощью поиска жестами Вы можете пользоваться интеллектуальным поиском информации в браузере, в которой Вы заинтересованы</string>
-    <string name="led_settings">Индикация</string>
-    <string name="led_colors_summary">Цвет уведомлений</string>
-    <string name="led_frequence_summary">Интервал между миганиями</string>
-    <string name="led_pulse_summary">Мигать светодиодом при новых уведомлениях</string>
-    <string name="breathing_light_freq_title">Частота мигания</string>
-    <string name="led_settings_summary">Управление частотой мигания светодиода для лучшего распознавания уведомления</string>
-    <string name="notification_led_color_titel">Цвет уведомлений</string>
-    <string name="incoming_call_led_color_titel">Цвет для входящего вызова</string>
-    <string name="mms_led_color_titel">Цвет для SMS</string>
-    <string name="notification_led_freq_title">Частота мигания уведомлений</string>
-    <string name="incoming_call_led_freq_title">Частота мигания входящего вызова</string>
-    <string name="mms_led_freq_title">Частота мигания SMS</string>
-    <string name="sensor_settings">Датчики</string>
+    <string name="internal_storage_title">Внутренняя память</string>
+    <string name="calculate_size">Подсчет очищаемого места ...</string>
+    <string name="memory_preferred">По умолчанию</string>
+    <string name="default_memory_title">Память по умолчанию</string>
+    <string name="phone_memory_title">Память устройства</string>
+    <string name="memory_others">Другие</string>
+    <string name="sdcard_storage_title">SD-карта</string>
+    <string name="sensor_settings">Умные датчики</string>
     <string name="sensor_call_setting">Во время вызова</string>
     <string name="sensor_other_setting">Другие</string>
     <string name="sensor_smart_answer">Умный ответ</string>
@@ -2550,7 +2643,26 @@
     <string name="sensor_voice_summary">В режиме громкой связи для возврата в нормальный режим поднесите устройство к уху</string>
     <string name="sensor_smart_call">Умный вызов</string>
     <string name="sensor_smart_call_summary">Для вызова контакта при просмотре данных и сообщений, поднесите устройство к уху</string>
+    <string name="sensor_shake_degree_gentle">Легко</string>
+    <string name="sensor_shake_degree_normal">Нормально</string>
+    <string name="sensor_shake_degree_strength">Сильно</string>
+    <string name="shake_degree_title">Сила встряхивания</string>
+    <string name="shake_degree_summary">Отрегулируйте силу встряхивания</string>
+    <string name="sensor_shake_ok">Ok</string>
+    <string name="sensor_shake_cancel">Отмена</string>
     <string name="activity_rounded_corner_title">Скругленные углы окон</string>
+    <string name="led_settings">Индикация</string>
+    <string name="led_colors_summary">Цвет уведомлений</string>
+    <string name="led_frequence_summary">Интервал между миганиями</string>
+    <string name="led_pulse_summary">Мигать светодиодом при новых уведомлениях</string>
+    <string name="breathing_light_freq_title">Частота мигания</string>
+    <string name="led_settings_summary">Управление частотой мигания светодиода для лучшего распознавания уведомления</string>
+    <string name="notification_led_color_titel">Цвет уведомлений</string>
+    <string name="incoming_call_led_color_titel">Цвет для входящего вызова</string>
+    <string name="mms_led_color_titel">Цвет для SMS</string>
+    <string name="notification_led_freq_title">Частота мигания уведомлений</string>
+    <string name="incoming_call_led_freq_title">Частота мигания входящего вызова</string>
+    <string name="mms_led_freq_title">Частота мигания SMS</string>
     <string name="day">1 день</string>
     <string name="days">" %s дн."</string>
     <string name="hour">1 час</string>
@@ -2561,6 +2673,33 @@
     <string name="never">никогда</string>
     <string name="done">Принять</string>
     <string name="revert">Отклонить</string>
+    <string name="proximity_title">Калибровка датчика приближения</string>
+    <string name="proximity_dialog_title">Калибровка</string>
+    <string name="proximity_summary">Обратите внимание на то, что датчик не может быть заблокирован в пределах более 2 см. Также следует избегать прямых солнечных лучей!</string>
+    <string name="proximity_msg_sucess">Калибровка прошла успешно</string>
+    <string name="proximity_msg_failed">Ошибка калибровки</string>
+    <string name="proximity_calib_ok">Да</string>
+    <string name="proximity_calib_failed">Нет</string>
+    <string name="dialog_apn_disabled">APN отключено!</string>
+    <string name="dialog_apn_disabled_msg">Выключите режим полета, чтобы включить параметры APN.</string>
+    <string name="hdmi_notification_title">HDMI-кабель подключен</string>
+    <string name="hdmi_notification_content">Щелкните для настройки HDMI</string>
+    <string name="gemini_data_connection_and_video_call">Соединение для передачи данных</string>
+    <string name="data_default_sim_title">Данные по умолчанию</string>
+    <string name="voice_sms_default_sim_title">Вызов/SMS по умолчанию</string>
+    <string name="show_dev_countdown">Вы почти у цели. Осталось несколько шагов: %1$d.</string>
+    <string name="bluetooth_visibility">Обнаружение разрешено</string>
+    <string name="bluetooth_not_discoverable">Разрешить обнаружение устройства</string>
+    <string name="bluetooth_visibility_timeout_summary">Установка продолжительности периода разрешения обнаружения</string>
+    <string name="date_time_12_hour_sample">1:00 PM</string>
+    <string name="date_time_24_hour_sample">13:00</string>
+    <string name="skip_button_label">Отклонить</string>
+    <string name="next_button_label">Далее</string>
+    <string name="lock_title">Обеспечение безопасности устройства</string>
+    <string name="lock_intro_message">"Чтобы никто, кроме Вас, не мог воспользоваться устройством, создайте графический ключ разблокировки экрана. Для этого соедините в произвольном порядке не менее четырех точек на следующем экране. 
+
+Чтобы начать, нажмите \"Далее\""</string>
+    <string name="show_password_summary" />
     <string name="schedule_power_on_off_time">Время</string>
     <string name="schedule_power_on_off_repeat">Повтор</string>
     <string name="schedule_power_on_off_set">Установка расписания вкл./выкл. питания</string>
@@ -2617,12 +2756,14 @@
     <string name="voice_summary">Выбор подписки для голосовых вызовов</string>
     <string name="data_title">Передача данных</string>
     <string name="data_summary">Выбор подписки для передачи данных</string>
+    <string name="new_band_mode_failed">В режиме полета</string>
+    <string name="tethered_ipv6_yulong_title">Настройки раздачи</string>
     <string name="eng_mode">Инженерное меню</string>
     <string name="eng_mode_summary">Сбор информации, статистика, тонкие настройки всевозможных параметров устройства</string>
     <string name="factory_mode">Заводское меню</string>
     <string name="factory_mode_summary">Вход в режим заводских настроек и тестирование устройства</string>
     <string name="pach_number">Модифицированная версия</string>
-    <string name="pach_number_default">LEWA_BIGWOLFYS_Mod</string>
+    <string name="pach_number_default">LEWA_Bigwolfys_Mod</string>
     <string name="homescreen">Виртуальная панель</string>
     <string name="homescreen2">Наэкранные клавиши</string>
     <string name="homescreen_summary">Вкл/выкл виртуальной панели клавиш Google</string>
@@ -2635,13 +2776,4 @@
     <string name="flip_2_mute_summary">Доступ к дополнительным настройкам</string>
     <string name="level">G-сенсор</string>
     <string name="level_summary">Калибровка G-сенсора/акселерометра</string>
-    <string name="sensor_shake_degree_gentle">Легко</string>
-    <string name="sensor_shake_degree_normal">Нормально</string>
-    <string name="sensor_shake_degree_strength">Сильно</string>
-    <string name="shake_degree_title">Сила встряхивания</string>
-    <string name="shake_degree_summary">Отрегулируйте силу встряхивания</string>
-    <string name="sensor_shake_ok">Ok</string>
-    <string name="sensor_shake_cancel">Отмена</string>
-    <string name="sdcard_formatting">Форматирование внутренней памяти...</string>
-    <string name="erase internal sd storage">Очистить внутреннюю память</string>
 </resources>

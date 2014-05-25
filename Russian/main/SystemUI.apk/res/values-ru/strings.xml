@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="config_statusBarComponent">com.android.systemui.statusbar.phone.LewaPhoneStatusBar</string>
-    <string name="config_systemBarComponent">com.android.systemui.statusbar.tablet.TabletStatusBar</string>
+
+
     <string name="status_bar_date_formatter">"%1$s
 %2$s"</string>
     <string name="gemini_default_sim_always_ask">Всегда спрашивать</string>
@@ -269,10 +269,8 @@
     <string name="reboot_message">Требуется перезагрузка</string>
     <string name="shake_clean_title">Очистка встряхиванием</string>
     <string name="shake_clean_summary">Быстрая очистка уведомлений встряхиванием</string>
-    <string name="notifilter_header">СКРЫТЫЕ УВЕДОМЛЕНИЯ</string>
-    <string name="notifilter_tail">ОТОБРАЖАЕМЫЕ УВЕДОМЛЕНИЯ</string>
     <string name="lewa_status_bar_date_formatter">"%2$s
 %1$s %3$s"</string>
-	<string name="twenty_four_hour_time_format">H:mm</string>
+    <string name="twenty_four_hour_time_format">H:mm</string>
     <string name="twelve_hour_time_format">h:mm a</string>
 </resources>
