@@ -242,7 +242,7 @@
 			</ReachedState>
 		</StartPoint>
 		<EndPoint x="-200" y="#screen_height*1000/1280" w="920" h="400">
-		<Intent action="lewa.action.stopalarm"/>
+		<Intent action="lewa.action.stoptimer"/>
 		</EndPoint>
 	</Unlocker>
 	<Var name="press_back_1" expression="1" const="true"/>
@@ -253,13 +253,7 @@
 			<Command target="paline.animation" value="play" condition="eq(#press_back_1,1)"/>
 		</Trigger>
 	</Var>
-	<Button name="snooze" x="#screen_width/2-180" y="#screen_height-1280+919-400" w="360" h="250">
-		<Triggers>
-			<Trigger action="up">
-			       <IntentCommand  action="lewa.intent.action.snooze"/>
-			</Trigger>
-		</Triggers>
-	</Button>
+	
 	<Var name="press_back_2" expression="1" const="true"/>
 	<Var name="lock_back_2" expression="#press_back_2" threshold="1">
 		<Trigger>

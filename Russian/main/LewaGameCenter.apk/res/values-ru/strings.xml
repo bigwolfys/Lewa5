@@ -89,6 +89,7 @@
     <string name="setting_auto_update_summary">Автообновление по Wi-Fi</string>
     <string name="setting_check_update">Проверить обновление</string>
     <string name="setting_check_update_summary">Текущая версия</string>
+
     <string name="recommend_app_title">Рекомендуемые игры</string>
     <string name="drop_down_list_header_default_text">Нажмите для обновления…</string>
     <string name="drop_down_list_header_pull_text">Протяните для обновления…</string>
@@ -99,4 +100,5 @@
     <string name="drop_down_list_footer_no_more_text">Больше нет</string>
     <string name="app_manage">Игровой менеджер</string>
     <string name="search_tip">Нажмите для поиска</string>
+
 </resources>

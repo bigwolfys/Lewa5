@@ -138,7 +138,7 @@
     <string name="delete_using_theme_icon">"Используемые иконки не могут быть удалены"</string>
     <string name="delete_using_theme_lock_screen_style">"Используемый локскрин не может быть удален"</string>
     <string name="delete_using_theme_system_app">"Используемое системное приложение не может быть удалено"</string>
-    <string name="theme_name_default">По умолчанию</string>    
+   <string name="theme_name_default">По умолчанию</string>
     <string name="style_appearance_name">lewadefault</string>
     <string name="author">Lewa OS</string>
 </resources>

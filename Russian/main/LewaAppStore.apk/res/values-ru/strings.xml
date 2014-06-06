@@ -89,6 +89,7 @@
     <string name="setting_auto_update_summary">Автообновление по Wi-Fi</string>
     <string name="setting_check_update">Проверить обновление</string>
     <string name="setting_check_update_summary">Текущая версия</string>
+
     <string name="recommend_app_title">Рекомендовать приложение</string>
     <string name="drop_down_list_header_default_text">Нажмите для обновления…</string>
     <string name="drop_down_list_header_pull_text">Протяните для обновления…</string>
