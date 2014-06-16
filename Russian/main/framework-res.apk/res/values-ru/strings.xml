@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<!--Decompiled by BART-R (BurgerZ <az.burgerz@gmail.com)>--><resources>
     <string name="cancel">Отмена</string>
     <string name="copy">Копировать</string>
     <string name="copyUrl">Копировать URL</string>
@@ -459,7 +459,7 @@
     <string name="permlab_setPreferredApplications">Предпочтительные приложения</string>
     <string name="permdesc_setPreferredApplications">Приложение сможет изменять предпочтительные приложения. Вредоносные приложения смогут незаметно изменять запускаемые Вами приложения и собирать Ваши личные данные от имени существующих приложений</string>
     <string name="permlab_writeSettings">Изменение настроек системы</string>
-    <string name="permdesc_writeSettings">Приложение сможет изменять настройки системы. Вредоносные приложения смогут  повредить конфигурацию системы</string>
+    <string name="permdesc_writeSettings">Приложение сможет изменять настройки системы. Вредоносные приложения смогут повредить конфигурацию системы</string>
     <string name="permlab_writeSecureSettings">Система безопасности</string>
     <string name="permdesc_writeSecureSettings">Приложение сможет изменять системные настройки безопасности. Это разрешение не используется обычными приложениями</string>
     <string name="permlab_writeGservices">Изменение карт Google</string>
@@ -499,7 +499,7 @@
     <string name="permlab_accessCoarseLocation">Примерное местоположение</string>
     <string name="permdesc_accessCoarseLocation">Приложение сможет определять Ваше примерное местоположение, используя различные источники данных о местоположении (например, по координатам мобильной сети и точек доступа Wi-Fi). Для этого в настройках устройства должна быть включена соответствующая функция</string>
     <string name="permlab_accessSurfaceFlinger">Доступ к прорисовке окон</string>
-    <string name="permdesc_accessSurfaceFlinger">Приложение сможет использовать низкоуровневые функции </string>
+    <string name="permdesc_accessSurfaceFlinger">Приложение сможет использовать низкоуровневые функции</string>
     <string name="permlab_readFrameBuffer">Считывание буфера фреймов</string>
     <string name="permdesc_readFrameBuffer">Приложение сможет считывать содержание буфера фреймов</string>
     <string name="permlab_configureWifiDisplay">Wi-Fi-дисплеи</string>
@@ -566,7 +566,7 @@
     <string name="permdesc_setWallpaper">Приложение сможет устанавливать системные обои</string>
     <string name="permlab_setWallpaperHints">Изменение размера обоев</string>
     <string name="permdesc_setWallpaperHints">Приложение сможет устанавливать подсказки по размеру системных обоев</string>
-    <string name="permlab_masterClear">Параметры  по умолчанию</string>
+    <string name="permlab_masterClear">Параметры по умолчанию</string>
     <string name="permdesc_masterClear">Приложение сможет выполнить полный сброс системы до заводских настроек, удалив все данные, параметры и установленные приложения</string>
     <string name="permlab_setTime">установка времени</string>
     <string name="permdesc_setTime">Приложение сможет изменять время в настройках устройства</string>
@@ -800,8 +800,7 @@
     <string name="lockscreen_glogin_password_hint">Пароль</string>
     <string name="lockscreen_glogin_submit_button">Вход</string>
     <string name="lockscreen_glogin_invalid_input">Неверное имя пользователя или пароль</string>
-    <string name="lockscreen_glogin_account_recovery_hint">\"Забыли имя пользователя или пароль?
-Перейдите на страницу \"<b>google.com/accounts/recovery</b>.</string>
+    <string name="lockscreen_glogin_account_recovery_hint">\"Забыли имя пользователя или пароль? Перейдите на страницу \"<b>google.com/accounts/recovery</b>.</string>
     <string name="lockscreen_glogin_checking_password">Проверка…</string>
     <string name="lockscreen_unlock_label">Разблокировать</string>
     <string name="lockscreen_sound_on_label">Вкл. звук</string>
@@ -999,9 +998,7 @@
     <string name="aerr_application">В приложении \"%1$s\" произошла ошибка</string>
     <string name="aerr_process">В приложении \"%1$s\" произошла ошибка</string>
     <string name="anr_title" />
-    <string name="anr_activity_application">Приложение \"%1$s\" не отвечает.
-
-Закрыть его?"</string>
+    <string name="anr_activity_application">Приложение \"%1$s\" не отвечает. Закрыть его?</string>
     <string name="anr_activity_process">"Приложение \"%1$s\" не отвечает.
 
 Закрыть его?"</string>
@@ -1394,9 +1391,9 @@
     <string name="owner_name">Владелец</string>
     <string name="storage_phone">Внутреннее хранилище</string>
     <string name="storage_external_usb">Внешнее USB-хранилище</string>
+    <string name="zz_keyguard_accessibility_voice_unlock">Разблокировка голосом</string>
     <string name="storage_ic_usb1">Внешнее IC-USB-хранилище1</string>
     <string name="storage_ic_usb2">Внешнее IC-USB-хранилище2</string>
-    <string name="zz_keyguard_accessibility_voice_unlock">Разблокировка голосом</string>
     <string name="sd_accessing_swtich_user_title">Переключить пользователя?</string>
     <string name="sd_accessing_swtich_user_message">Все несохраненные данные в текущем аккаунте будут потеряны</string>
 </resources>

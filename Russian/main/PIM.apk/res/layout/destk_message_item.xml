@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lewa.PIM.mms.MsgPopup.DestktopMessageItem android:orientation="vertical" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/sms_page_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="12.0sp" android:textColor="#ffaaaaaa" android:gravity="center" android:id="@id/sms_page" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffaaaaaa" android:gravity="bottom" android:id="@id/sms_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+        <ImageView android:id="@id/sms_from_card" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_marginBottom="3.0dip" android:src="@drawable/sim_card_1" android:layout_toLeftOf="@id/sms_date" android:layout_alignBottom="@id/sms_date" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/sms_text_layout" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/sms_page_layout">
+        <TextView android:textSize="14.0sp" android:textColor="#ff00bfff" android:gravity="left|center" android:id="@id/sms_text" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/mms_pop_text_text_height" />
+    </LinearLayout>
+</com.lewa.PIM.mms.MsgPopup.DestktopMessageItem>

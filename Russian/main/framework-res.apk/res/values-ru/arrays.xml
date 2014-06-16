@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<!--Decompiled by BART-R (BurgerZ <az.burgerz@gmail.com)>--><resources>
     <string-array name="emailAddressTypes">
         <item>Личный</item>
         <item>Рабочий</item>
@@ -43,5 +43,40 @@
         <item>Другое</item>
         <item>Создать свой ярлык</item>
     </string-array>
+    <integer-array name="config_autoBrightnessLevels">
+        <item>100</item>
+        <item>150</item>
+        <item>225</item>
+        <item>320</item>
+        <item>640</item>
+        <item>1280</item>
+    </integer-array>
+    <integer-array name="config_autoBrightnessLcdBacklightValues">
+        <item>5</item>
+        <item>20</item>
+        <item>70</item>
+        <item>102</item>
+        <item>180</item>
+        <item>220</item>
+        <item>255</item>
+    </integer-array>
+    <integer-array name="config_autoBrightnessButtonBacklightValues">
+        <item>255</item>
+        <item>255</item>
+        <item>255</item>
+        <item>255</item>
+        <item>255</item>
+        <item>255</item>
+        <item>255</item>
+    </integer-array>
+    <integer-array name="config_autoBrightnessKeyboardBacklightValues">
+        <item>255</item>
+        <item>255</item>
+        <item>255</item>
+        <item>255</item>
+        <item>255</item>
+        <item>255</item>
+        <item>255</item>
+    </integer-array>
     <array name="carrier_properties" />
 </resources>
